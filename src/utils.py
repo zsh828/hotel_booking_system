@@ -1,6 +1,7 @@
 import re
 import hashlib
 import datetime
+from typing import Optional
 
 
 def validate_phone(phone: str) -> bool:

@@ -252,7 +252,6 @@ class HotelSystem:
             refund_amount = booking.total_amount
 
         booking.status = BookingStatus.CANCELLED
-        room = self.rooms[booking.booking_id] # Error in logic, should be booking.room_number
         room = self.rooms[booking.room_number]
         
         # 如果房间没有其他活跃预订，恢复为空闲
